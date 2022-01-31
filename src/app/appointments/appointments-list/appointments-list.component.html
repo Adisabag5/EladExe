@@ -1,0 +1,21 @@
+<div class="list-container">
+    <h1>התורים שלך:</h1>
+    <div class="list-item" *ngFor="let appointment of appointmentsList">
+        <button mat-icon-button color="warn" (click)="deleteAppointment(appointment.id)">
+            <mat-icon>delete</mat-icon>
+        </button>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <p>{{appointment.date}}</p>
+                </mat-panel-title>
+                <mat-panel-description>
+                    <p>{{appointment.docName}}</p>
+                   
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            
+            <p>{{appointment.info}}</p>
+        </mat-expansion-panel>
+    </div>
+</div>

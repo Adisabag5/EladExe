@@ -1,0 +1,20 @@
+<div class="login-content">
+  <div class="login-box">
+
+    <h4>אנא הכנס שם משתמש</h4>
+    
+
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-item">
+        <label for="name">
+          שם:
+        </label>
+        <input id="name" type="text" formControlName="name">
+      </div>
+    
+      <button class="submit-btn" type="submit" mat-raised-button color="primary">חיפוש תור</button>
+    
+    </form>
+  </div>
+</div>

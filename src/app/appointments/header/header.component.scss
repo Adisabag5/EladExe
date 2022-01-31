@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(249, 163, 71);
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-details{
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+
+    #username{
+        font-size: 1em;
+        font-weight: 600;
+        color: white
+    }
+
+    #full-name{
+        color: lightgray;
+        font-size: .5em;
+        font-weight: 300;
+    }
+}
+
+.time{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    color: lightgray;
+    font-weight: 600;
+}
